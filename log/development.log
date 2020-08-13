@@ -11561,3 +11561,99 @@ Processing by Api::V1::WeatherController#index as */*
 Completed 200 OK in 173ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 713)
 
 
+Started GET "/" for ::1 at 2020-08-12 17:55:17 -0700
+  [1m[35m (3.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomepageController#index as HTML
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 353)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/vikas/dev/interviews/onesignal/ruby-react-weather/public/packs
+[Webpacker] Hash: c4322a32338ea0434fe1
+Version: webpack 4.44.1
+Time: 12751ms
+Built at: 08/12/2020 5:55:32 PM
+                                     Asset       Size       Chunks                         Chunk Names
+          js/Index-ceb37c725abcc58fce45.js   3.19 MiB        Index  [emitted] [immutable]  Index
+      js/Index-ceb37c725abcc58fce45.js.map   2.84 MiB        Index  [emitted] [dev]        Index
+    js/application-9afcbb5693aa87623e69.js    124 KiB  application  [emitted] [immutable]  application
+js/application-9afcbb5693aa87623e69.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  661 bytes               [emitted]              
+Entrypoint application = js/application-9afcbb5693aa87623e69.js js/application-9afcbb5693aa87623e69.js.map
+Entrypoint Index = js/Index-ceb37c725abcc58fce45.js js/Index-ceb37c725abcc58fce45.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Index.jsx] 749 bytes {Index} [built]
+[./app/javascript/packs/application.js] 749 bytes {application} [built]
+[./app/javascript/routes/Index.jsx] 844 bytes {Index} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {Index} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 499 hidden modules
+
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14689ms (Views: 14676.0ms | ActiveRecord: 0.0ms | Allocations: 26842)
+
+
+Started GET "/api/v1/weather?lat=37.2670464&lon=-121.89695999999999" for ::1 at 2020-08-12 17:55:33 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+NameError (uninitialized constant Api
+Did you mean?  API):
+  
+app/controllers/api/v1/weather_controller.rb:1:in `<main>'
+Started GET "/api/v1/weather?lat=37.2670464&lon=-121.89695999999999" for ::1 at 2020-08-12 17:55:35 -0700
+  
+NameError (uninitialized constant Api
+Did you mean?  API):
+  
+app/controllers/api/v1/weather_controller.rb:1:in `<main>'
+Started GET "/api/v1/weather?lat=37.2670464&lon=-121.89695999999999" for ::1 at 2020-08-12 17:56:18 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+NameError (uninitialized constant Api
+Did you mean?  API):
+  
+app/controllers/api/v1/weather_controller.rb:1:in `<main>'
+Started GET "/" for ::1 at 2020-08-12 17:56:38 -0700
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomepageController#index as HTML
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 284)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 45ms (Views: 37.4ms | ActiveRecord: 0.0ms | Allocations: 10269)
+
+
+Started GET "/api/v1/weather?lat=37.2670464&lon=-121.89695999999999" for ::1 at 2020-08-12 17:56:38 -0700
+  
+NameError (uninitialized constant Api
+Did you mean?  API):
+  
+app/controllers/api/v1/weather_controller.rb:1:in `<main>'
+Started GET "/api/v1/weather?lat=37.2670464&lon=-121.89695999999999" for ::1 at 2020-08-12 17:56:40 -0700
+  
+NameError (uninitialized constant Api
+Did you mean?  API):
+  
+app/controllers/api/v1/weather_controller.rb:1:in `<main>'
+Started GET "/" for ::1 at 2020-08-12 17:57:01 -0700
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomepageController#index as HTML
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 5)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.0ms | Allocations: 6145)
+
+
+Started GET "/api/v1/weather?lat=37.2670464&lon=-121.89695999999999" for ::1 at 2020-08-12 17:57:01 -0700
+Processing by API::V1::WeatherController#index as */*
+  Parameters: {"lat"=>"37.2670464", "lon"=>"-121.89695999999999"}
+Completed 200 OK in 1217ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 1225)
+
+
+Started GET "/api/v1/weather?lat=37.2670464&lon=-121.89695999999999" for ::1 at 2020-08-12 17:57:03 -0700
+Processing by API::V1::WeatherController#index as */*
+  Parameters: {"lat"=>"37.2670464", "lon"=>"-121.89695999999999"}
+Completed 200 OK in 177ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 713)
+
+

@@ -1,13 +1,12 @@
-class Api::V1::WeatherController < ApplicationController
+class API::V1::WeatherController < ApplicationController
   before_action :get_weather
   
-  # GET /articles/1
   def index
     render json: @weather
   end
   
   private
-  # Use callbacks to share common setup or constraints between actions.
+  
   def get_weather
 
     lat = params[:lat] 
@@ -27,5 +26,5 @@ class Api::V1::WeatherController < ApplicationController
 
     @weather = weather_data
   end
-  # Only allow a trusted parameter “white list” through.
+  
   end
