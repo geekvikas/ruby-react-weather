@@ -11,6 +11,7 @@ import {
 	Toolbar
 } from "@material-ui/core";
 
+
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -53,14 +54,16 @@ export default function Weather() {
     if (coords && coords.latitude) {
       const lat = coords.latitude;
       const lon = coords.longitude;
+      
 
-      // We should load this from ENV variable
-      const API_KEY = "f513eb8ca9bc54afc9773da7aeaaa41f";
-
-      const apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}`;
+      const apiUrl = `/api/v1/weather?lat=${lat}&lon=${lon}`;
       
       fetch(apiUrl)
-        .then((response) => response.json())
+        .then((response,error) => {
+            if(error)
+              setError(error)
+            return response.json()
+        })
         .then((data) => {
           if (data.cod == 200) setWeather(data);
           else setWeather(mockAPI);
@@ -91,3 +94,5 @@ export default function Weather() {
     </div>
   );
 }
+
+      
